@@ -1,249 +1,279 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-  <head>
-  
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
-      var OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "e9ed70a1-836a-448b-aeae-8a9a3ab06b36",
-        });
+<head>
+
+  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+  <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "e9ed70a1-836a-448b-aeae-8a9a3ab06b36",
+      });
+    });
+
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(function () {
+      OneSignal.init({
+        appId: "5605e6f7-59fb-4441-98e8-3424d278ba78",
+        autoRegister: true,
+        notifyButton: {
+          enable: false
+        },
+        welcomeNotification: {
+          disable: true
+        },
+        safari_web_id: 'web.onesignal.auto.5605e6f7-59fb-4441-98e8-3424d278ba78'
       });
 
-      var OneSignal = window.OneSignal || [];
-            OneSignal.push(function() {
-                OneSignal.init({
-                    appId: "5605e6f7-59fb-4441-98e8-3424d278ba78",
-                    autoRegister: true,
-                    notifyButton: {
-                        enable: false
-                    },
-                    welcomeNotification: {
-                        disable: true
-                    },
-                    safari_web_id: 'web.onesignal.auto.5605e6f7-59fb-4441-98e8-3424d278ba78'
-                });
+      OneSignal.setSubscription(true);
 
-                OneSignal.setSubscription(true); 
+      OneSignal.sendTags({
+        userType: 'supplier', userActive: 'true'
+      });
+    });
 
-                OneSignal.sendTags({
-                    userType: 'supplier', userActive: 'true'
-                });
-            });         
+  </script>
 
-    </script>
-    
-       
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <!-- add to homescreen for ios -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    
-    <link rel="icon" href="img/agency/portfolio/grid/Logo.JPG" type="image/x-icon" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Custom fonts for this theme -->
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="img/agency/portfolio/grid/Logo.JPG" type="image/x-icon" />
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+  <!-- Custom fonts for this theme -->
 
-    
-    <!-- Plugin CSS -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
-    <link href="vendor/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="vendor/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-    <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
-    <link href="device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
-    
-    <link href="css/vitality-red.css" rel="stylesheet" type="text/css">
+  <link
+    href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet'
+    type='text/css'>
+
+  <link
+    href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet'
+    type='text/css'>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css"
+    integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
+    integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css"
+    integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
+    integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css"
+    integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+
+
+  <!-- Plugin CSS -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+  <link href="vendor/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+  <link href="vendor/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+  <link href="device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
+
+  <link href="css/vitality-red.css" rel="stylesheet" type="text/css">
 
 
 
-    <!--  apple-touch-startup-image -->
-      <!-- add to homescreen for ios -->
+  <!--  apple-touch-startup-image -->
+  <!-- add to homescreen for ios -->
 
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
-   
-    <link href="assets/atoms 512.png" sizes="2048x2732" rel="apple-touch-startup-image" />
-    <link href="assets/atoms 512.png" sizes="1668x2224" rel="apple-touch-startup-image" />
-    <link href="assets/atoms 512.png" sizes="1536x2048" rel="apple-touch-startup-image" />
-    <link href="assets/atoms 512.png" sizes="1125x2436" rel="apple-touch-startup-image" />
-    <link href="assets/atoms 512.png" sizes="1242x2208" rel="apple-touch-startup-image" />
-    <link href="assets/atoms 512.png" sizes="750x1334" rel="apple-touch-startup-image" />
-    <link href="assets/atoms 512.png" sizes="640x1136" rel="apple-touch-startup-image" />
-    <link rel="apple-touch-startup-image" />  
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+
+  <link href="assets/atoms 512.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+  <link href="assets/atoms 512.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+  <link href="assets/atoms 512.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+  <link href="assets/atoms 512.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+  <link href="assets/atoms 512.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+  <link href="assets/atoms 512.png" sizes="750x1334" rel="apple-touch-startup-image" />
+  <link href="assets/atoms 512.png" sizes="640x1136" rel="apple-touch-startup-image" />
+  <link rel="apple-touch-startup-image" />
 
 
 
 
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/atoms 512.png">
-    <link rel="manifest" href="assets/manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/atoms 512.png">
+  <link rel="manifest" href="assets/manifest.json">
 
-    <meta name="author" content="Agência Núcleo">
-    <meta name="description" content="A Núcleo é uma hub de consultoria, dedicada a criar novas estratégias de linguagem para a reestruturação e modernização da comunicação no mercado do entretenimento.">
-    <meta property="og:description" content="A Núcleo é uma hub de consultoria, dedicada a criar novas estratégias de linguagem para a reestruturação e modernização da comunicação no mercado do entretenimento."/>
-    <meta property="og:url" content="http://www.nucleo.sampa.br/"/>
-    <meta property="og:title" content="Agência Núcleo"/>
-    <!--<meta property="og:image" content="http://www.agencianucleo.com/ogimage2.jpg"/>
+  <meta name="author" content="Agência Núcleo">
+  <meta name="description"
+    content="A Núcleo é uma hub de consultoria, dedicada a criar novas estratégias de linguagem para a reestruturação e modernização da comunicação no mercado do entretenimento.">
+  <meta property="og:description"
+    content="A Núcleo é uma hub de consultoria, dedicada a criar novas estratégias de linguagem para a reestruturação e modernização da comunicação no mercado do entretenimento." />
+  <meta property="og:url" content="http://www.nucleo.sampa.br/" />
+  <meta property="og:title" content="Agência Núcleo" />
+  <!--<meta property="og:image" content="http://www.agencianucleo.com/ogimage2.jpg"/>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">-->
-    
-    <title>Agência Núcleo</title>
+
+  <title>Agência Núcleo</title>
 
 
 
-  </head>
+</head>
 
-  <body id="page-top">
+<body id="page-top">
 
-    <!-- Navigation -->
-     <!-- Navigation -->
-     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <!--<img class="img-fluid" src="img/agency/logo.svg" alt="">-->
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
-          Menu
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Processo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#work">Trabalhos</a>
-            </li>
-            <!--<li class="nav-item">
+  <!-- Navigation -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <!--<img class="img-fluid" src="img/agency/logo.svg" alt="">-->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+        Menu
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Processo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#work">Trabalhos</a>
+          </li>
+          <!--<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#pricing">Preços</a>
             </li>-->
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Masthead -->
-    <header class="masthead" style="background-image: url('img/agency/backgrounds/bg-header.jpg');">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-12 my-auto text-center text-white">
-            <!--<img class="masthead-img img-fluid mb-3" src="img/agency/profile.svg" alt="">#1# -->    <br>
-            <br>
-            <br>
-            <div class="masthead-title">Nucleo</div>
-            <hr class="colored">
-              <span class="masthead-subtitle">Innov</span>
-              <span class="masthead-subtitle-Action">ACTION</span>
-              <span class="masthead-subtitle">ideas</span>                       
-          </div>
-        </div>
-      </div>
-      <div class="scroll-down">
-        <a class="btn js-scroll-trigger" href="#about">
-          <i class="fa fa-angle-down fa-fw"></i>
-        </a>
-      </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    </header>
+  <!-- Masthead -->
+  <header class="masthead" style="background-image: url('img/agency/backgrounds/bg-header.jpg');">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 my-auto text-center text-white">
+          <!--<img class="masthead-img img-fluid mb-3" src="img/agency/profile.svg" alt="">#1# --> <br>
+          <br>
+          <br>
+          <div class="masthead-title">Nucleo</div>
+          <hr class="colored">
+          <span class="masthead-subtitle">Innov</span>
+          <span class="masthead-subtitle-Action">ACTION</span>
+          <span class="masthead-subtitle">ideas</span>
 
-    <!-- About Section -->
-    <section class="page-section" id="about">
-      <div class="container-fluid">
-        <div class="wow fadeIn text-center">
-          <h2>A experiência e a tecnologia reinventam o negócio do entretenimento</h2>
-          <p class="mb-0">"As relações humanas são a chave para o sucesso"</p>
+
+          <form klicksend-form-id='95unqd' method="post" action="//handler.klicksend.com.br/subscription/95unqd">
+            <input type="text" name="first_name" id="first_name" placeholder="Primeiro Nome" value="">
+            <input type="email" name="email" id="email" placeholder="Email" value="" required>
+            <input type="text" name="phone" id="phone" placeholder="Telefone" value="">
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_95unqd" tabindex="-1" value="">
+            </div>
+            <button>Enviar</button>
+          </form>
+          
         </div>
-        <hr class="colored">
-        <br>
-        <div class="row text-center">
-          <div class="col-lg-3 col-md-6">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".2s">
-              <i class="fa fa-edit fa-4x"></i>
-              <h3>Quem Somos</h3>
-              <p class="mb-0">A Núcleo é uma hub de consultoria, dedicada a criar novas estratégias de linguagem para a reestruturação e modernização da comunicação no mercado do entretenimento.</p>
-            </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a class="btn js-scroll-trigger" href="#about">
+        <i class="fa fa-angle-down fa-fw"></i>
+      </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section" id="about">
+    <div class="container-fluid">
+      <div class="wow fadeIn text-center">
+        <h2>A experiência e a tecnologia reinventam o negócio do entretenimento</h2>
+        <p class="mb-0">"As relações humanas são a chave para o sucesso"</p>
+      </div>
+      <hr class="colored">
+      <br>
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-6">
+          <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".2s">
+            <i class="fa fa-edit fa-4x"></i>
+            <h3>Quem Somos</h3>
+            <p class="mb-0">A Núcleo é uma hub de consultoria, dedicada a criar novas estratégias de linguagem para a
+              reestruturação e modernização da comunicação no mercado do entretenimento.</p>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".6s">
-              <i class="fas fa-chart-line fa-4x"></i>
-              <h3>Missão</h3>
-              <p class="mb-0">Tornar o ambiente de eventos mais rentável, competitivo e sustentável por meio de storytelling, tecnologia e inovação.</p>
-            </div>
-          </div>          
-          <div class="col-lg-3 col-md-6">
-            <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
-              <i class="far fa-eye fa-4x"></i>
-              <h3>Visão</h3>
-              <p class="mb-0">Apostamos na mistura e na adequação de tecnologias digitais e analógicas, a fim de alcançarmos uma comunicação e experiência mais direta, abrangente e contemporânea para o seu evento.</p>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".6s">
+            <i class="fas fa-chart-line fa-4x"></i>
+            <h3>Missão</h3>
+            <p class="mb-0">Tornar o ambiente de eventos mais rentável, competitivo e sustentável por meio de
+              storytelling, tecnologia e inovação.</p>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="wow fadeIn px-4 h-100" data-wow-delay=".8s">
-              <i class="far fa-building fa-4x"></i>
-              
-              <h3>Valores</h3>
-              <p class="mb-0">A Núcleo tem o compromisso de conduzir o seu trabalho dentro dos seguintes valores:                 
-              <p class="mb-0">- Somos empreendedores e inovadores;</p>              
-              <p class="mb-0">- Temos na essência a construção de relacionamentos duradouros;</p>                                            
-              <p class="mb-0">- Valorizamos qualidade aliada à simplicidade e praticidade;</p>                               
-              <p class="mb-0">- Responsabilidade socioambiental.</p>   
-                </p>
-            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
+            <i class="far fa-eye fa-4x"></i>
+            <h3>Visão</h3>
+            <p class="mb-0">Apostamos na mistura e na adequação de tecnologias digitais e analógicas, a fim de
+              alcançarmos uma comunicação e experiência mais direta, abrangente e contemporânea para o seu evento.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="wow fadeIn px-4 h-100" data-wow-delay=".8s">
+            <i class="far fa-building fa-4x"></i>
+
+            <h3>Valores</h3>
+            <p class="mb-0">A Núcleo tem o compromisso de conduzir o seu trabalho dentro dos seguintes valores:
+              <p class="mb-0">- Somos empreendedores e inovadores;</p>
+              <p class="mb-0">- Temos na essência a construção de relacionamentos duradouros;</p>
+              <p class="mb-0">- Valorizamos qualidade aliada à simplicidade e praticidade;</p>
+              <p class="mb-0">- Responsabilidade socioambiental.</p>
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Team Section -->
-   <!-- <section class="page-section bg-light" id="team">
+  <!-- Team Section -->
+  <!-- <section class="page-section bg-light" id="team">
       <div class="container text-center wow fadeIn">
         <h2>Nosso Time</h2>
         <p class="mb-0">Somos um grupo de profissionais com uma paixão pela grande arte que serve a um propósito prático.</p>
@@ -263,7 +293,7 @@
                   <a href="https://www.facebook.com/alex.faria.58">
                     <i class="fa fa-facebook fa-fw"></i>
                   </a>-->
-                <!--</li>
+  <!--</li>
                 <li class="list-inline-item">
                   <a href="https://www.instagram.com/faria9803/?hl=pt-br">
                     <i class="fa fa-instagram fa-fw"></i>
@@ -278,7 +308,7 @@
             </div>
           </div> -->
 
-          <!-- Team Carousel Item 2 
+  <!-- Team Carousel Item 2 
           <div class="item">
             <div class="overlay"></div>
             <img class="img-fluid" src="img/agency/team/2.jpg" alt="">
@@ -306,7 +336,7 @@
             </div>
           </div>-->
 
-          <!-- Team Carousel Item 3 
+  <!-- Team Carousel Item 3 
           <div class="item">
             <div class="overlay"></div>
             <img class="img-fluid" src="img/agency/team/3.jpg" alt="">
@@ -339,7 +369,7 @@
             </div>
           </div>-->
 
-          <!-- Team Carousel Item 4 
+  <!-- Team Carousel Item 4 
           <div class="item">
             <div class="overlay"></div>
             <img class="img-fluid" src="img/agency/team/4.jpg" alt="">
@@ -372,7 +402,7 @@
             </div>
           </div>-->
 
-          <!-- Team Carousel Item 5 #1# 
+  <!-- Team Carousel Item 5 #1# 
           <!--<div class="item">
             <div class="overlay"></div>
             <img class="img-fluid" src="img/agency/team/5.jpg" alt="">
@@ -409,393 +439,398 @@
       </div>
     </section>-->
 
-    <!-- Call to Action -->
-    <section class="call-to-action" style="background-image: url('img/agency/backgrounds/bg-pricing.jpg');" id="team">
-      <div class="container text-center wow fadeIn">
-        <h2>Nosso Time</h2>
-        <p class="mb-0">Somos gente pensando em pessoas, acreditamos que o sucesso dos negócios esta relacionado diretamente a qualidade das relações humanas.</p>
-        <hr class="colored">
-      </div>
+  <!-- Call to Action -->
+  <section class="call-to-action" style="background-image: url('img/agency/backgrounds/bg-pricing.jpg');" id="team">
+    <div class="container text-center wow fadeIn">
+      <h2>Nosso Time</h2>
+      <p class="mb-0">Somos gente pensando em pessoas, acreditamos que o sucesso dos negócios esta relacionado
+        diretamente a qualidade das relações humanas.</p>
+      <hr class="colored">
+    </div>
 
-      <div class="container wow fadeIn">
-        <div class="row">
-          <div class="col-md-10 mx-auto">          
-            <span class="quote">Cada
-              <span class="text-primary">projeto</span>
-              é pensado e criado especialmente para cada tipo de demanda em
-              <span class="text-primary">eventos,</span>
-              no intuito de
-              <span class="text-primary">potencializar</span>   
-              a experiência do público e objetivos de 
-              <span class="text-primary">comunicação</span>.</span>
-            <hr class="colored">
-            <div class="scroll-down">
-                <a class="btn btn-primary js-scroll-trigger" href="#services">                   
-                  <i class="fa fa-angle-down fa-fw"></i>
-                </a>
-              </div>
+    <div class="container wow fadeIn">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <span class="quote">Cada
+            <span class="text-primary">projeto</span>
+            é pensado e criado especialmente para cada tipo de demanda em
+            <span class="text-primary">eventos,</span>
+            no intuito de
+            <span class="text-primary">potencializar</span>
+            a experiência do público e objetivos de
+            <span class="text-primary">comunicação</span>.</span>
+          <hr class="colored">
+          <div class="scroll-down">
+            <a class="btn btn-primary js-scroll-trigger" href="#services">
+              <i class="fa fa-angle-down fa-fw"></i>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section class="page-section services" id="services">
-      <div class="container">
-        <div class="text-center wow fadeIn">
-          <h2>NOSSO PROCESSO</h2>
-          <hr class="colored">       
-          <br>
-        </div>
-        <div class="row mt-4">
-
-          <!-- Service Item 1 -->
-          <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
-            <div class="media">
-              <div class="pull-left">
-                <i class="fa fa-clipboard rounded-circle"></i>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Planejamento</h4>
-                <ul>
-                  <li>Analise do projeto</li>
-                  <li>Identificação de soluções</li>
-                  <li>Estudo de persona</li>
-                  <li>Planejamento estratégico</li>
-                  <li>Definição de metas e objetivos</li>
-                  <li>Cronograma de implantação</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service Item 2 -->
-          <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
-            <div class="media">
-              <div class="pull-left">
-                <i class="fa fa-pencil rounded-circle"></i>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Desenvolvimento</h4>
-                <ul>
-                  <li>Construção do projeto</li>
-                  <li>Implantação</li>
-                  <li>Monitoramento e controle</li>
-                  <li>Revisão de escopo</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Service Item 3 -->
-          <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
-            <div class="media">
-              <div class="pull-left">
-                <i class="fa fa-rocket rounded-circle"></i>
-              </div>
-              <div class="media-body">
-                <h4 class="media-heading">Entrega</h4>
-                <ul>
-                  <li>Lançamento</li>
-                  <li>Acompanhamento de engajamento e resultado</li>
-                  <li>Entrega do projeto</li>
-                  <li>Analytics dos resultados</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio Carousel Heading -->
-    <section class="call-to-action" id="work">
-
-      <h2>NOSSO TRABALHO</h2>
-      <br>
-      <div class="container wow fadeIn">
-          <div class="row">
-            <div class="col-md-10 mx-auto">          
-              <span class="quote">Fazemos uma 
-                <span class="text-primary">análise técnica</span>
-                cuidadosa e é proposta uma
-                <span class="text-primary">estratégia </span>
-                de implantação e produção da nova comunicação do seu evento.
-                <span class="text-primary">Sempre</span>   
-                agregando soluções criativas, storytelling, tecnologia com
-                <span class="text-primary">inovação</span>                
-                e criando impacto.</span>
-              <hr class="colored">
-              <br>
-              <div class="scroll-down">
-                <a class="btn btn-primary js-scroll-trigger" href="#Client">                   
-                  <i class="fa fa-angle-down fa-fw"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-
-
-<!-- Retira do Nosso trabalho -->
-    
-    <!-- Portfolio Grid Section -->
-    <section class="page-section" id="Client">
-      <div class="container text-center wow fadeIn">
-        
-        <h2>Nossos Clientes</h2>
+  <!-- Services Section -->
+  <section class="page-section services" id="services">
+    <div class="container">
+      <div class="text-center wow fadeIn">
+        <h2>NOSSO PROCESSO</h2>
         <hr class="colored">
         <br>
+      </div>
+      <div class="row mt-4">
 
-        <!--<div class="controls mt-3">
+        <!-- Service Item 1 -->
+        <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
+          <div class="media">
+            <div class="pull-left">
+              <i class="fa fa-clipboard rounded-circle"></i>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Planejamento</h4>
+              <ul>
+                <li>Analise do projeto</li>
+                <li>Identificação de soluções</li>
+                <li>Estudo de persona</li>
+                <li>Planejamento estratégico</li>
+                <li>Definição de metas e objetivos</li>
+                <li>Cronograma de implantação</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Item 2 -->
+        <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
+          <div class="media">
+            <div class="pull-left">
+              <i class="fa fa-pencil rounded-circle"></i>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Desenvolvimento</h4>
+              <ul>
+                <li>Construção do projeto</li>
+                <li>Implantação</li>
+                <li>Monitoramento e controle</li>
+                <li>Revisão de escopo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Item 3 -->
+        <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
+          <div class="media">
+            <div class="pull-left">
+              <i class="fa fa-rocket rounded-circle"></i>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Entrega</h4>
+              <ul>
+                <li>Lançamento</li>
+                <li>Acompanhamento de engajamento e resultado</li>
+                <li>Entrega do projeto</li>
+                <li>Analytics dos resultados</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Carousel Heading -->
+  <section class="call-to-action" id="work">
+
+    <h2>NOSSO TRABALHO</h2>
+    <br>
+    <div class="container wow fadeIn">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <span class="quote">Fazemos uma
+            <span class="text-primary">análise técnica</span>
+            cuidadosa e é proposta uma
+            <span class="text-primary">estratégia </span>
+            de implantação e produção da nova comunicação do seu evento.
+            <span class="text-primary">Sempre</span>
+            agregando soluções criativas, storytelling, tecnologia com
+            <span class="text-primary">inovação</span>
+            e criando impacto.</span>
+          <hr class="colored">
+          <br>
+          <div class="scroll-down">
+            <a class="btn btn-primary js-scroll-trigger" href="#Client">
+              <i class="fa fa-angle-down fa-fw"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Retira do Nosso trabalho -->
+
+  <!-- Portfolio Grid Section -->
+  <section class="page-section" id="Client">
+    <div class="container text-center wow fadeIn">
+
+      <h2>Nossos Clientes</h2>
+      <hr class="colored">
+      <br>
+
+      <!--<div class="controls mt-3">
         <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-mixitup-control data-filter="all">Todos</button>
           <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-mixitup-control data-filter=".identity">Barbearia</button>
           <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-mixitup-control data-filter=".graphic">Graphic</button>
           <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-mixitup-control data-filter=".web">Web</button>
         </div>-->
-        <div class="portfolio-grid clearfix" id="portfolioList">
+      <div class="portfolio-grid clearfix" id="portfolioList">
 
-          <!-- Grid Item 1 -->
-          <div class="mix identity" href="img/agency/portfolio/grid/grid-1.jpg" title="Agência Fabri|k">
-            <div class="portfolio-wrapper">
-              <img src="img/agency/portfolio/grid/grid-1.jpg" alt="">
-              <div class="caption">
-                <div class="caption-text">
-                  <a class="text-title">Agência Fabri|K</a>
-                  <span class="text-category">Fabrik</span>
-                </div>
-                
-                <div class="caption-bg"></div>
+        <!-- Grid Item 1 -->
+        <div class="mix identity" href="img/agency/portfolio/grid/grid-1.jpg" title="Agência Fabri|k">
+          <div class="portfolio-wrapper">
+            <img src="img/agency/portfolio/grid/grid-1.jpg" alt="">
+            <div class="caption">
+              <div class="caption-text">
+                <a class="text-title">Agência Fabri|K</a>
+                <span class="text-category">Fabrik</span>
               </div>
+
+              <div class="caption-bg"></div>
             </div>
           </div>
+        </div>
 
-          <!-- Grid Item 2 -->
-          <div class="mix web" href="img/agency/portfolio/grid/grid-2.jpg" title="Berbearia Cavalera">
-            <div class="portfolio-wrapper">
-              <img src="img/agency/portfolio/grid/grid-2.jpg" alt="">
-              <div class="caption">
-                <div class="caption-text">
-                  <a class="text-title">Berbearia Cavalera</a>
-                  <span class="text-category">Cavalera</span>
-                </div>
-                <div class="caption-bg"></div>
+        <!-- Grid Item 2 -->
+        <div class="mix web" href="img/agency/portfolio/grid/grid-2.jpg" title="Berbearia Cavalera">
+          <div class="portfolio-wrapper">
+            <img src="img/agency/portfolio/grid/grid-2.jpg" alt="">
+            <div class="caption">
+              <div class="caption-text">
+                <a class="text-title">Berbearia Cavalera</a>
+                <span class="text-category">Cavalera</span>
               </div>
+              <div class="caption-bg"></div>
             </div>
           </div>
+        </div>
 
-          <!-- Grid Item 3 -->
-          <div class="mix web" href="img/agency/portfolio/grid/grid-5.jpg" title="Comedoria Gonzales">
-            <div class="portfolio-wrapper">
-              <img src="img/agency/portfolio/grid/grid-5.jpg" alt="">
-              <div class="caption">
-                <div class="caption-text">
-                  <a class="text-title">Comedoria Gonzales</a>
-                  <span class="text-category">Gonzales</span>
-                </div>
-                <div class="caption-bg"></div>
+        <!-- Grid Item 3 -->
+        <div class="mix web" href="img/agency/portfolio/grid/grid-5.jpg" title="Comedoria Gonzales">
+          <div class="portfolio-wrapper">
+            <img src="img/agency/portfolio/grid/grid-5.jpg" alt="">
+            <div class="caption">
+              <div class="caption-text">
+                <a class="text-title">Comedoria Gonzales</a>
+                <span class="text-category">Gonzales</span>
               </div>
-            </div>
-          </div>                  
-
-          <!-- Grid Item 4 -->
-          <div class="mix identity" href="img/agency/portfolio/grid/grid-4.jpg" title="The Joiners">
-            <div class="portfolio-wrapper">
-              <img src="img/agency/portfolio/grid/grid-4.jpg" alt="">
-              <div class="caption">
-                <div class="caption-text">
-                  <a class="text-title">The Joiners</a>
-                  <span class="text-category">Joiners</span>
-                </div>
-                <div class="caption-bg"></div>
-              </div>
+              <div class="caption-bg"></div>
             </div>
           </div>
+        </div>
 
-          <!-- Grid Item 5 -->
-          <div class="mix web" href="img/agency/portfolio/grid/grid-3.jpg" title="Espaço de eventos ABolha">
-            <div class="portfolio-wrapper">
-              <img src="img/agency/portfolio/grid/grid-3.jpg" alt="">
-              <div class="caption">
-                <div class="caption-text">
-                  <a class="text-title">ABolha</a>
-                  <span class="text-category">Espaço de eventos ABolha</span>
-                </div>
-                <div class="caption-bg"></div>
+        <!-- Grid Item 4 -->
+        <div class="mix identity" href="img/agency/portfolio/grid/grid-4.jpg" title="The Joiners">
+          <div class="portfolio-wrapper">
+            <img src="img/agency/portfolio/grid/grid-4.jpg" alt="">
+            <div class="caption">
+              <div class="caption-text">
+                <a class="text-title">The Joiners</a>
+                <span class="text-category">Joiners</span>
               </div>
+              <div class="caption-bg"></div>
             </div>
           </div>
+        </div>
 
-          <!-- Grid Item 6 -->
-          <div class="mix graphic" href="img/agency/portfolio/grid/grid-6.jpg" title="Otra Vida">
-            <div class="portfolio-wrapper">
-              <img src="img/agency/portfolio/grid/grid-6.jpg" alt="">
-              <div class="caption">
-                <div class="caption-text">
-                  <a class="text-title">Otra Vida</a>
-                  <span class="text-category">Lowraider</span>
-                </div>
-                <div class="caption-bg"></div>
+        <!-- Grid Item 5 -->
+        <div class="mix web" href="img/agency/portfolio/grid/grid-3.jpg" title="Espaço de eventos ABolha">
+          <div class="portfolio-wrapper">
+            <img src="img/agency/portfolio/grid/grid-3.jpg" alt="">
+            <div class="caption">
+              <div class="caption-text">
+                <a class="text-title">ABolha</a>
+                <span class="text-category">Espaço de eventos ABolha</span>
               </div>
+              <div class="caption-bg"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid Item 6 -->
+        <div class="mix graphic" href="img/agency/portfolio/grid/grid-6.jpg" title="Otra Vida">
+          <div class="portfolio-wrapper">
+            <img src="img/agency/portfolio/grid/grid-6.jpg" alt="">
+            <div class="caption">
+              <div class="caption-text">
+                <a class="text-title">Otra Vida</a>
+                <span class="text-category">Lowraider</span>
+              </div>
+              <div class="caption-bg"></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-   
-    <!-- Contact Section -->
-    <section class="page-section" id="contact">
-      <div class="container wow fadeIn">
-        <div class="text-center">
-          <h2>CONTATE-NOS</h2>
-          <hr class="colored">
-          <p>Informe-nos sobre o seu próximo projeto e informaremos o que podemos fazer para ajudá-lo.</p>
-        </div>
-        <div class="row mt-4">
-          <div class="col-lg-8 mx-auto">
-            <form name="sentMessage" id="contactForm" novalidate>
-              <div class="row control-group">
-                <div class="form-group col-12 floating-label-form-group controls">
-                  <label>Name</label>
-                  <input type="text" class="form-control" placeholder="Nome" id="name" required data-validation-required-message="Por favor, insira seu nome.">
-                  <p class="help-block text-danger"></p>
-                </div>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container wow fadeIn">
+      <div class="text-center">
+        <h2>CONTATE-NOS</h2>
+        <hr class="colored">
+        <p>Informe-nos sobre o seu próximo projeto e informaremos o que podemos fazer para ajudá-lo.</p>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-8 mx-auto">
+          <form name="sentMessage" id="contactForm" novalidate>
+            <div class="row control-group">
+              <div class="form-group col-12 floating-label-form-group controls">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Nome" id="name" required
+                  data-validation-required-message="Por favor, insira seu nome.">
+                <p class="help-block text-danger"></p>
               </div>
-              <div class="row control-group">
-                <div class="form-group col-12 floating-label-form-group controls">
-                  <label>Email Address</label>
-                  <input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Por favor, indique o seu endereço de e-mail.">
-                  <p class="help-block text-danger"></p>
-                </div>
+            </div>
+            <div class="row control-group">
+              <div class="form-group col-12 floating-label-form-group controls">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="Email" id="email" required
+                  data-validation-required-message="Por favor, indique o seu endereço de e-mail.">
+                <p class="help-block text-danger"></p>
               </div>
-              <div class="row control-group">
-                <div class="form-group col-12 floating-label-form-group controls">
-                  <label>Phone Number</label>
-                  <input type="tel" class="form-control" placeholder="Telefone" id="phone" required data-validation-required-message="Por favor, digite seu número de telefone.">
-                  <p class="help-block text-danger"></p>
-                </div>
+            </div>
+            <div class="row control-group">
+              <div class="form-group col-12 floating-label-form-group controls">
+                <label>Phone Number</label>
+                <input type="tel" class="form-control" placeholder="Telefone" id="phone" required
+                  data-validation-required-message="Por favor, digite seu número de telefone.">
+                <p class="help-block text-danger"></p>
               </div>
-              <div class="row control-group">
-                <div class="form-group col-12 floating-label-form-group controls">
-                  <label>Message</label>
-                  <textarea rows="5" class="form-control" placeholder="Mensagem" id="message" required data-validation-required-message="Por favor, digite uma mensagem."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
+            </div>
+            <div class="row control-group">
+              <div class="form-group col-12 floating-label-form-group controls">
+                <label>Message</label>
+                <textarea rows="5" class="form-control" placeholder="Mensagem" id="message" required
+                  data-validation-required-message="Por favor, digite uma mensagem."></textarea>
+                <p class="help-block text-danger"></p>
               </div>
-              <br>
-              <div id="success"></div>
-              <div class="row">
-                <div class="form-group col-12">
-                  <button type="submit" class="btn btn-secondary">Enviar</button>
-                </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="row">
+              <div class="form-group col-12">
+                <button type="submit" class="btn btn-secondary">Enviar</button>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Block Button Call to Action -->
-    <div class="btn btn-block btn-full-width" href="#Contact">FALE CONOSCO </div>
+  <!-- Block Button Call to Action -->
+  <div class="btn btn-block btn-full-width" href="#Contact">FALE CONOSCO </div>
 
-    <!-- Footer -->
-    <footer class="footer" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')" >
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-4 footer-contact-details">
-            <h4>
+  <!-- Footer -->
+  <footer class="footer" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 footer-contact-details">
+          <h4>
             <i class="fab fa-whatsapp"></i>
-              Telefone</h4> 
-              <p>+55 11 98774-3735</p>
-          </div>
-          <div class="col-md-4 footer-contact-details">
-            <h4>
-              <i class="fa fa-map-marker"></i>
-              Visita</h4>
-            <p>Rua Professor Cesare Lombroso, 161 - 3° Andar               
-              <br>Bom Retiro, São Paulo - SP 
-              <br>CEP: 01122-161
-              <br>Lombroso Fashion Mall</p>
-          </div>
-          <div class="col-md-4 footer-contact-details">
-            <h4>
-              <i class="fa fa-envelope"></i>
-              Email</h4>
-              <p href="mailto:comercial@nucleo.sampa.br">comercial@nucleo.sampa.br</p>
-          </div>
+            Telefone</h4>
+          <p>+55 11 98774-3735</p>
         </div>
-        <div class="row footer-social">
-          <div class="col-lg-12">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/abolharooftop"  target="_blank">
-                  <i class="fa fa-facebook-f fa-fw fa-2x"></i>              
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.instagram.com/abolharooftop/?hl=pt-br"  target="_blank"> 
-                  <i class="fab fa-instagram fa-fw fa-2x"></i>                   
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-md-4 footer-contact-details">
+          <h4>
+            <i class="fa fa-map-marker"></i>
+            Visita</h4>
+          <p>Rua Professor Cesare Lombroso, 161 - 3° Andar
+            <br>Bom Retiro, São Paulo - SP
+            <br>CEP: 01122-161
+            <br>Lombroso Fashion Mall</p>
         </div>
-        <p class="copyright">&copy; NÚCLEO 2019 Todos os direitos reservados.</p>
+        <div class="col-md-4 footer-contact-details">
+          <h4>
+            <i class="fa fa-envelope"></i>
+            Email</h4>
+          <p href="mailto:comercial@nucleo.sampa.br">comercial@nucleo.sampa.br</p>
+        </div>
       </div>
-    </footer>
+      <div class="row footer-social">
+        <div class="col-lg-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/abolharooftop" target="_blank">
+                <i class="fa fa-facebook-f fa-fw fa-2x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/abolharooftop/?hl=pt-br" target="_blank">
+                <i class="fab fa-instagram fa-fw fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; NÚCLEO 2019 Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-    <!-- Portfolio Modals -->
-   
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="vendor/owl-carousel/owl.carousel.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="vendor/vide/jquery.vide.min.js"></script>
-    <script src="vendor/mixitup/mixitup.min.js"></script>
-    <script src="vendor/wowjs/wow.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="js/contact_me.js"></script>
-    <script src="js/jqBootstrapValidation.js"></script>
-
-    <!-- Custom scripts for this theme -->
-    <script src="js/vitality.js"></script>
-    <script src="js/mixitup-config.js"></script>
+  <!-- Portfolio Modals -->
 
 
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script>     
-      if (navigator.serviceWorker.controller) {
-        console.log('[PWA Builder] active service worker found, no need to register')
-      } else {
-        //Register the ServiceWorker
-        navigator.serviceWorker.register('pwabuilder-sw.js', {
-          scope: './'
-        }).then(function(reg) {
-          console.log('Service worker has been registered for scope:'+ reg.scope);
-        });
-      }
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendor/owl-carousel/owl.carousel.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="vendor/vide/jquery.vide.min.js"></script>
+  <script src="vendor/mixitup/mixitup.min.js"></script>
+  <script src="vendor/wowjs/wow.min.js"></script>
 
-      // Detecta se o dispositivo está no iOS
-      const isIos = () => {
-        const userAgent = window.navigator.userAgent.toLowerCase();
-        return /iphone|ipad|ipod/.test( userAgent );
-      }
-      // Detects if device is in standalone mode
-      const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
-      // Verifica se deve exibir notificação popup de instalação:
-      if (isIos() && !isInStandaloneMode()) {
-        this.setState({ showInstallMessage: true });
-      }       
-    </script>
+  <!-- Contact form JavaScript -->
+  <script src="js/contact_me.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
 
-  </body>
+  <!-- Custom scripts for this theme -->
+  <script src="js/vitality.js"></script>
+  <script src="js/mixitup-config.js"></script>
+
+
+
+  <script>
+    if (navigator.serviceWorker.controller) {
+      console.log('[PWA Builder] active service worker found, no need to register')
+    } else {
+      //Register the ServiceWorker
+      navigator.serviceWorker.register('pwabuilder-sw.js', {
+        scope: './'
+      }).then(function (reg) {
+        console.log('Service worker has been registered for scope:' + reg.scope);
+      });
+    }
+
+    // Detecta se o dispositivo está no iOS
+    const isIos = () => {
+      const userAgent = window.navigator.userAgent.toLowerCase();
+      return /iphone|ipad|ipod/.test(userAgent);
+    }
+    // Detects if device is in standalone mode
+    const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+    // Verifica se deve exibir notificação popup de instalação:
+    if (isIos() && !isInStandaloneMode()) {
+      this.setState({ showInstallMessage: true });
+    }       
+  </script>
+
+</body>
 
 </html>
